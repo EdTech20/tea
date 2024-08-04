@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/KYC.CSS">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/tokenomics.css">
+  <link rel="stylesheet" href="css/partnership.css">
+  <link rel="stylesheet" href="css/roadmap.css">
+  <link rel="stylesheet" href="css/wallet.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <style>
+    /* Wallet Address Styling */
+.wallet-address {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.wallet-address h2 {
+    color: #FFD700; /* Gold color */
+    margin-bottom: 20px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.address-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#wallet-address {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 300px;
+    text-align: center;
+}
+
+.copy-button {
+    background-color: #FFD700; /* Gold color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.copy-button:hover {
+    background-color: #ffcc00; /* Lighter gold */
+    transform: scale(1.05);
+}
+
+.copy-message {
+    display: block;
+    margin-top: 10px;
+    color: #28a745; /* Green color */
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img src="images/logo.png" alt="" width="120px"></div> <span id="logo" style="font-family: 'Snow', sans-serif;">IceTea</span>
+        <ul class="nav-list">
+          <li><a href="index.html" style="font-family: 'NORD-Black', sans-serif">Home</a></li>
+          <li><a href="about.html" style="font-family: 'NORD-Black', sans-serif">About us</a></li>
+          <li><a href="contact.html" style="font-family: 'NORD-Black', sans-serif">Contact us</a></li>
+          <li><a href="roadmap.html" style="font-family: 'NORD-Black', sans-serif">RoadMap</a></li>
+          <li><a href="howtobuy.html" style="font-family: 'NORD-Black', sans-serif">How to Buy</a></li>
+    
+        </ul>
+        <!-- <button class="live-chart">Live Chart</button> -->
+        <div class="menu-icon" onclick="openSidebar()" style="font-family: 'NORD-Black', sans-serif">&#9776;</div>
+      </nav>
+    
+      <div id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="closeSidebar()" style="font-family: 'NORD-Black', sans-serif">&times;</div>
+        <br><br><br><br>
+        <ul class="sidebar-list">
+            <li><a href="index.html" style="font-family: 'NORD-Black', sans-serif">Home</a></li>
+            <li><a href="about.html" style="font-family: 'NORD-Black', sans-serif">About us</a></li>
+            <li><a href="contact.html" style="font-family: 'NORD-Black', sans-serif">Contact us</a></li>
+            <li><a href="roadmap.html" style="font-family: 'NORD-Black', sans-serif">RoadMap</a></li>
+            <li><a href="howtobuy.html" style="font-family: 'NORD-Black', sans-serif">How to Buy</a></li>
+        </ul>
+      </div>
+  </div>
+    <section class="wallet-setup">
+        <h1 style="font-family: 'NORD-Black', sans-serif">How to Buy $IceTea</h1>
+        <section class="wallet-address">
+            <h2 style="font-family: 'NORD-Black', sans-serif">Our Wallet Address</h2>
+            <div class="address-container">
+                <input style="font-family: 'NORD-Black', sans-serif" type="text" id="wallet-address" value="74Sd13bn4c4wwk5CRdLvzrfDWxDRep2tmESqvPGajVbH" readonly>
+                <button id="copy-button" class="copy-button" style="font-family: 'NORD-Black', sans-serif">
+                    <i class="fas fa-copy"></i> Copy Address
+                </button>
+                <span id="copy-message" class="copy-message"></span>
+            </div>
+        </section>
+        <div class="wallet-steps">
+            <div class="step">
+                <img src="images/Phantom.png" alt="Wallet Icon" class="step-icon">
+                <h2 style="font-family: 'NORD-Black', sans-serif">Create a Wallet</h2>
+                <p style="font-family: 'NORD-Black', sans-serif">Download Phantom or your wallet of choice from the app store or Google Play Store for free. For desktop users, download the Google Chrome extension by going to the Phantom app website.</p>
+            </div>
+            <div class="step">
+                <img src="images/sol.jpg" alt="SOL Icon" class="step-icon">
+                <h2 style="font-family: 'NORD-Black', sans-serif">Get Some SOL</h2>
+                <p style="font-family: 'NORD-Black', sans-serif">Have SOL in your wallet to switch to $FluffCoin. If you don’t have any SOL, you can buy SOL from an exchange or cross-chain swap and send it to your wallet.</p>
+            </div>
+            <div class="step">
+                <img src="images/dex-screener-seeklogo.png" alt="Raydium/Jupiter Icon" class="step-icon">
+                <h2 style="font-family: 'NORD-Black', sans-serif">Go to Mooonshot at Dexscreener</h2>
+                <p style="font-family: 'NORD-Black', sans-serif">Go to dexscreener.com in Google Chrome or on the browser inside your Phantom app. Connect your wallet. Paste the $ICETEA token address into Moonshot at dexscreener and confirm the swap. When Phantom prompts you for a wallet signature, sign it.</p>
+            </div>
+            <div class="step">
+                <img src="images/logo.png" alt="Swap Icon" class="step-icon" width="500px">
+                <h2 style="font-family: 'NORD-Black', sans-serif">Switch SOL for $IceTea</h2>
+                <p style="font-family: 'NORD-Black', sans-serif">Switch SOL for $IceTea. We have ZERO taxes so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.</p>
+            </div>
+        </div>
+    </section>
+    <script src="script/navbar.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html" style="font-family: 'NORD-Black', sans-serif">Home</a>
+                <a href="about.html" style="font-family: 'NORD-Black', sans-serif">About Us</a>
+                <a href="roadmap.html" style="font-family: 'NORD-Black', sans-serif">Roadmap</a>
+                <a href="howtobuy.html" style="font-family: 'NORD-Black', sans-serif">How to Buy</a>
+                <a href="mailto:chamindauk007@gmail.com" class="footer-email" style="font-family: 'NORD-Black', sans-serif">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://x.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-x"></i>
+                </a>
+                <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-copy">
+                <p style="font-family: 'NORD-Black', sans-serif">$IceTea is dedicated to creating a fun, impactful, and community-driven project. Join us on this ICETEA adventure and help us make the crypto world a better place, one $IceTea at a time!</p>
+            </div>
+            <div class="footer-copy">
+                <p style="font-family: 'NORD-Black', sans-serif">&copy; <span id="current-year"></span> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const copyButton = document.getElementById('copy-button');
+    const walletAddressInput = document.getElementById('wallet-address');
+    const copyMessage = document.getElementById('copy-message');
+
+    copyButton.addEventListener('click', function () {
+        walletAddressInput.select();
+        document.execCommand('copy');
+        copyMessage.textContent = 'Address copied to clipboard!';
+        setTimeout(() => copyMessage.textContent = '', 2000);
+    });
+});
+
+    </script>
+    
+</body>
+</html>

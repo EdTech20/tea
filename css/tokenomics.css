@@ -1,0 +1,95 @@
+/* Overall section styling */
+.tokenomics-section {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+@media (max-width: 768px){
+    .tokenomics-section{
+        position: relative !important;
+        bottom: 200px !important;
+    }
+}
+
+/* Heading styling */
+.tokenomics-section h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 3rem;
+    color: #FFD700; /* Gold color */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Container for the pie chart */
+.pie-chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 400px; /* Adjust height as needed */
+    position: relative;
+    animation: scaleUp 1s ease-in-out;
+}
+
+/* Legend styling */
+.legend {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Legend items styling */
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Legend color circles */
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Hover effect for legend items */
+.legend-item:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Pie chart hover effect */
+.pie-chart-container:hover {
+    animation: scaleUp 0.6s ease-in-out;
+}

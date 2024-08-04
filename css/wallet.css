@@ -1,0 +1,83 @@
+/* Wallet setup section styling */
+.wallet-setup {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.wallet-setup h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 3rem;
+    color: #FFD700; /* Gold color */
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Steps container */
+.wallet-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Individual step styling */
+.step {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Step icon styling */
+.step-icon {
+    width: 80px; /* Increased width */
+    height: 80px; /* Increased height */
+    margin-bottom: 15px;
+}
+
+/* Step title styling */
+.step h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Step description styling */
+.step p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .wallet-setup {
+        padding: 40px 10px;
+    }
+
+    .step-icon {
+        width: 60px; /* Adjusted size for smaller screens */
+        height: 60px;
+    }
+
+    .step h2 {
+        font-size: 1.2rem;
+    }
+
+    .step p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,85 @@
+body {
+  font-family: 'NORD-Black', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background-color: #FFD700;
+  color: hsl(0, 0%, 20%);
+}
+
+@font-face {
+  font-family: 'NORD-Black';
+  src: url('../myFonts/NORD-Black.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  animation: float 2s ease-in-out infinite;
+
+}
+
+@media (max-width: 768px) {
+  .hero-text-left{
+    position: relative !important;
+    left: 180px !important;
+    font-size: 70px !important;
+
+
+  }
+
+  .hero-text-right{
+    position: relative !important;
+    right: 180px !important;
+    font-size: 70px !important;
+  }
+
+  .hero{
+    position: relative;
+    bottom: 80px;
+  }
+}
+
+.hero-text-left, .hero-text-right {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  animation: float 2s ease-in-out infinite;
+}
+
+.hero-text-left {
+  left: 10%;
+}
+
+.hero-text-right {
+  right: 10%;
+}
+
+.hero-image img {
+  /* max-width: 101%; */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text-left, .hero-text-right {
+    font-size: 2.5rem;
+  }
+}

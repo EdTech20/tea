@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFD700;
+    color: #333;
+}
+
+.roadmap {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 40px 0;
+}
+
+.roadmap h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFD700; /* Gold color */
+    margin-bottom: 30px;
+}
+
+.roadmap-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.roadmap-content div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.roadmap-content h3 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2rem;
+    color: #FFD700; /* Gold color */
+    margin-bottom: 20px;
+}
+
+.roadmap-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.roadmap-content li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 30px;
+    color: #555;
+}
+
+.roadmap-content li i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold color */
+}
+
+.icon-checkmark::before {
+    content: '\2714'; /* Unicode checkmark symbol */
+}
+
+.icon-future::before {
+    content: '\1F4C8'; /* Unicode chart increasing symbol */
+}
+
+@media (max-width: 768px) {
+    .roadmap-content {
+        flex-direction: column;
+    }
+
+    .roadmap{
+        position: relative !important;
+        bottom: 300px !important;
+    }
+}

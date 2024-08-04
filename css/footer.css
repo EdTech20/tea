@@ -1,0 +1,69 @@
+/* Footer styling */
+.footer {
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Optional: adds a light border at the top */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #333; /* Text color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-email {
+    color: #333; /* Text color */
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-email:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    display: inline-block;
+    color: #333; /* Icon color */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FFD700; /* Gold color for hover effect */
+}
+
+.footer-copy {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.footer-copy p {
+    margin: 0;
+}
+
+.footer-copy p:last-of-type {
+    margin-top: 10px; /* Add space between the paragraphs */
+}
